@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Reference Link For this Application
 
 https://coursetro.com/posts/code/151/Angular-Ngrx-Store-Tutorial---Learn-Angular-State-Management
+
+## To View Application
+just click on this https://jagadeeshg0801.github.io/ngrx-angular-example
