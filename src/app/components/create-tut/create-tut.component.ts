@@ -10,15 +10,16 @@ import * as TutorialActions from './../../actions/tutorial.actions';
 })
 export class CreateTutComponent implements OnInit {
 
-  tutorialObj: any ={name: '', url: ''}
+ name='';
+  url= '';
   constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
   }
 
   addTutorial(){
-    console.log('addTutorial', this.tutorialObj);
-    this.store.dispatch(new TutorialActions.AddTutorial(this.tutorialObj))
+    console.log('addTutorial', {name: this.name, url: this.url});
+    this.store.dispatch(new TutorialActions.AddTutorial({name: this.name, url: this.url}))
   }
 
 }

@@ -15,7 +15,9 @@ export class AddTutorial implements Action {
 export class RemoveTutorial implements Action {
     readonly type = REMOVE_TUTORIAL
 
-    constructor(public payload: number) {}
+    constructor(public payload: number) {
+
+    }
 }
 
 // Section 4
