@@ -1,4 +1,4 @@
-import { Tutorial } from "src/models/tutorial.model";
+import { Tutorial } from "src/app/models/tutorial.model";
 import {  Action } from '@ngrx/store'
 
 export const ADD_TUTORIAL = '[TUTORIAL] Add';
