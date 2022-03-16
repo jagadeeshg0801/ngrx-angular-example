@@ -1,16 +1,20 @@
 import { Tutorial } from "src/app/models/tutorial.model";
 import * as TutorialActions from './../actions/tutorial.actions';
-const initialState: Tutorial ={
+
+// Section 1
+const initialState: Tutorial = {
     name: 'Initial Tutorial',
     url: 'http://google.com'
 }
 
-export function reducer(state: Tutorial[] = [initialState],
-    action : TutorialActions.Actions){
-        switch(action.type){
-            case TutorialActions.ADD_TUTORIAL:
-                return [...state, action.paylod];
-            default :
-                return state;
-        }
+// Section 2
+export function reducer(state: Tutorial[] = [initialState], action: TutorialActions.Actions) {
+
+    // Section 3
+    switch(action.type) {
+        case TutorialActions.ADD_TUTORIAL:
+            return [...state, action.payload];
+        default:
+            return state;
     }
+}
