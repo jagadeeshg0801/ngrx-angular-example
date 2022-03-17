@@ -20,6 +20,8 @@ export class CreateTutComponent implements OnInit {
   addTutorial(){
     console.log('addTutorial', {name: this.name, url: this.url});
     this.store.dispatch(new TutorialActions.AddTutorial({name: this.name, url: this.url}))
+    this.name ='';
+    this.url ='';
   }
 
 }
